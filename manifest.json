@@ -1,8 +1,9 @@
 {
   "name": "betfrom",
   "short_name": "betfrom",
-  "icons": [{
-    "src": "images/1dbcf2e2a7bd4fe5c987995ba8532a188c639b21.png",
+  "icons": [
+    {
+      "src": "images/1dbcf2e2a7bd4fe5c987995ba8532a188c639b21.png",
       "sizes": "1712x920",
       "type": "image/png"
     }, {
@@ -25,7 +26,32 @@
       "src": "images/17e9e48ea9a77e7a1014d8f11fd2fa8b2441cc0b.png",
       "sizes": "1712x920",
       "type": "image/png"
-    }],
+    },{
+      "src": "images/hello-icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "images/hello-icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "images/hello-icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "images/hello-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "images/hello-icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }, {
+      "src": "images/hello-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
   "lang": "en-US",
   "start_url": "/index.html",
   "display": "standalone",
