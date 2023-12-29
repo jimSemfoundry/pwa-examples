@@ -1,29 +1,29 @@
 {
-  "name": "Hello World",
-  "short_name": "Hello",
+  "name": "betfrom",
+  "short_name": "betfrom",
   "icons": [{
-    "src": "images/hello-icon-128.png",
-      "sizes": "128x128",
+    "src": "images/1dbcf2e2a7bd4fe5c987995ba8532a188c639b21.png",
+      "sizes": "1712x920",
       "type": "image/png"
     }, {
-      "src": "images/hello-icon-144.png",
-      "sizes": "144x144",
+      "src": "images/4ec75981-0d74-4783-85ff-3a8fbf2f58d3.png",
+      "sizes": "120x344",
       "type": "image/png"
     }, {
-      "src": "images/hello-icon-152.png",
-      "sizes": "152x152",
+      "src": "images/6e63d09d-6e48-43d1-990c-d86ef3fd29a7.png",
+      "sizes": "178x18",
       "type": "image/png"
     }, {
-      "src": "images/hello-icon-192.png",
-      "sizes": "192x192",
+      "src": "images/9dc42170-3ece-4a25-8830-ec86b1986898.png",
+      "sizes": "783x300",
       "type": "image/png"
     }, {
-      "src": "images/hello-icon-256.png",
-      "sizes": "256x256",
+      "src": "images/9f2e6215-794d-4720-8315-d995bde02a98.png",
+      "sizes": "3840x1730",
       "type": "image/png"
     }, {
-      "src": "images/hello-icon-512.png",
-      "sizes": "512x512",
+      "src": "images/17e9e48ea9a77e7a1014d8f11fd2fa8b2441cc0b.png",
+      "sizes": "1712x920",
       "type": "image/png"
     }],
   "lang": "en-US",
