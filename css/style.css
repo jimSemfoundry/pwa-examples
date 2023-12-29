@@ -50,7 +50,7 @@ a {
 }
 @font-face {
 	font-family:"Mont-Bold";
-	src:url("./MontBold.otf")
+	src:url("./../MontBold.otf")
     format("opentype");
 }
 .main-container {
