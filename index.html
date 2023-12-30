@@ -144,7 +144,7 @@
             </div>
             
             <div class="frame-box">
-              <div class="frame" onclick="downFUn">
+              <div class="frame" id="install">
                 Faça o download agora!
               </div>
             </div>
@@ -174,14 +174,22 @@
   <script src="./js/main.js"></script>
   <script>  
  
-    window.addEventListener('beforeinstallprompt', function(event) { // 监听到可安装事件，进行触发提醒用户
-            setTimeout(function() {
-                event.prompt()
-                event.userChoice //判断用户是否安装
-                    .then(function(e) {
-                        install = true
-                    })    
-            }, 2000)
-        }, { once: true }) 
+    let installPrompt = null;
+    const installButton = document.querySelector("#install");
+
+    window.addEventListener("beforeinstallprompt", (event) => {
+      event.preventDefault();
+      installPrompt = event;
+      installButton.removeAttribute("hidden");
+    });
+    installButton.addEventListener("click", async () => {
+      if (!installPrompt) {
+        return;
+      }
+      const result = await installPrompt.prompt();
+      console.log(`Install prompt was: ${result.outcome}`);
+      installPrompt = null;
+      installButton.setAttribute("hidden", "");
+    });
   </script>
 </html>
