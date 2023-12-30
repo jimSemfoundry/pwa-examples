@@ -45,22 +45,18 @@
     function isOK(e){ 
       e.target.parentNode.classList.remove("loading")
     }
-    let isTooSoon = true;
-    window.addEventListener("beforeinstallprompt", function(e) {
-      if (isTooSoon) {
-        e.preventDefault(); // Prevents prompt display
-        console.log(e)
-        // Prompt later instead:
-        setTimeout(function() {
-          isTooSoon = false;
-          console.log(11111111111111)
-          e.target.prompt(); // Throws if called more than once or default not prevented
-        }, 5000);
-      }
+    function downFUn(){
+      window.addEventListener('beforeinstallprompt', function(event) { // 监听到可安装事件，进行触发提醒用户
+            setTimeout(function() {
+                event.prompt()
+                event.userChoice //判断用户是否安装
+                    .then(function(e) {
+                        install = true
+                    })    
+            }, 2000)
+        }, { once: true }) 
+    }
 
-      // The event was re-dispatched in response to our request
-      // ...
-    });
   </script>
   </head>
   <body ontouchstart="" >
@@ -158,7 +154,7 @@
             </div>
             
             <div class="frame-box">
-              <div class="frame">
+              <div class="frame" onclick="downFUn">
                 Faça o download agora!
               </div>
             </div>
