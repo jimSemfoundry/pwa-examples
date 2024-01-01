@@ -405,6 +405,11 @@ a {
 	/* 51.39.75rem*/
   text-transform:uppercase;
 	margin-top:1.6875rem;
+	-moz-user-select:none; /*火狐*/
+    -webkit-user-select:none; /*webkit浏览器*/
+    -ms-user-select:none; /*IE10*/
+    -khtml-user-select:none; /*早期浏览器*/
+    user-select:none;
 }
 .frame-box {
 	max-width:63.125rem;
