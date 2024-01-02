@@ -1,6 +1,7 @@
 window.onload = () => {
   let subscribeButton = document.getElementById("subscribe");
   let unsubscribeButton = document.getElementById("unsubscribe");
+  let url = 'https://jim-wbpn.onrender.com/jimapi'
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("./sw.js",{
@@ -32,8 +33,8 @@ window.onload = () => {
   }
   
   async function subscribeToPushNotifications(registration) {
-    // const SERVER_URL = "https://jim-api.123998.me/jimapi/getPublicKey";
-    const SERVER_URL = "https://lark.semfoundry.com/api/LarkInform/get_public_key";
+    const SERVER_URL = url + "/getPublicKey";
+    // const SERVER_URL = "https://lark.semfoundry.com/api/LarkInform/get_public_key";
     fetch(SERVER_URL, {
             method: "get",
             headers: {
@@ -49,8 +50,8 @@ window.onload = () => {
                     })
                     .then(function (subscription) {
                         // console.log("Subscribed to push notifications:", subscription);
-                        // updateSubscriptionOnServer(subscription);
-                        updateSubscriptionOnServerToMike(subscription)
+                        updateSubscriptionOnServer(subscription);
+                        // updateSubscriptionOnServerToMike(subscription)
                         // subscribeButton.disabled = true;
                         // unsubscribeButton.disabled = false;
                     })
@@ -74,7 +75,7 @@ window.onload = () => {
                 .then(function () {
                     console.log("Unsubscribed from push notifications:", subscription);
                     updateSubscriptionOnServer(null);
-                    updateSubscriptionOnServerToMike(null)
+                    // updateSubscriptionOnServerToMike(null)
                     // subscribeButton.disabled = false;
                     // unsubscribeButton.disabled = true;
                 })
@@ -103,7 +104,7 @@ window.onload = () => {
   async function updateSubscriptionOnServer(subscription) {
     // TODO: Send subscription to server for storage and use
     // console.log(subscription)
-    const SERVER_URL = "https://jim-api.123998.me/jimapi/save-subscription";
+    const SERVER_URL = url + "/save-subscription";
     const response = await fetch(SERVER_URL, {
         method: "post",
         headers: {
