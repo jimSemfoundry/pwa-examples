@@ -1,17 +1,20 @@
 window.onload = () => {
+  let subscribeButton = document.getElementById("subscribe");
+  let unsubscribeButton = document.getElementById("unsubscribe");
+
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("./sw.js",{
         scope: ".", // <--- THIS BIT IS REQUIRED
     })
     .then(async function (registration) {
         // console.log("Service Worker registered successfully:", registration);
-        // subscribeButton.addEventListener("click", function () {
+        subscribeButton.addEventListener("click", function () {
             subscribeToPushNotifications(registration);
-        // });
+        });
   
-        // unsubscribeButton.addEventListener("click", function () {
-        //     unsubscribeFromPushNotifications(registration);
-        // });
+        unsubscribeButton.addEventListener("click", function () {
+            unsubscribeFromPushNotifications(registration);
+        });
         // registration.pushManager.getSubscription().then(function (subscription) {
         //     isSubscribed = !(subscription === null);
         //     if (isSubscribed) {
