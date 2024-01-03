@@ -863,7 +863,7 @@ a {
 
 .frame-two {
 	padding:10px 20px;
-	 
+	transition: 0.3s all;
 	/* height:3rem; */
 	background:#7ef572;
 	overflow:hidden;
@@ -1119,6 +1119,9 @@ a {
 }
 .frame-two{
 	font-size: 16px;
+}
+.frame-two:active{
+	transform: scale(0.96);
 }
 ;}
 

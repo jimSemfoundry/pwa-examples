@@ -172,6 +172,7 @@
       </div>
     </div>
     <div class="zhezhao" id='zhezhao'>
+      
       <div class="zhezhao-box">
         <div class="display-flex frame-two-box">
           <img src="./images/Favicon.png" alt="" class="zhezhao-img">
@@ -206,12 +207,13 @@
       installPrompt = event;
       installButton.removeAttribute("hidden");
     });
+
     installButton.addEventListener("click", async () => {
       if (!installPrompt) {
         return;
       }
       const result = await installPrompt.prompt();
-      console.log(`Install prompt was: ${result.outcome}`);
+      // console.log(`Install prompt was: ${result.outcome}`);
       installPrompt = null;
       installButton.setAttribute("hidden", "");
     });
