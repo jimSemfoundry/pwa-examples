@@ -853,11 +853,11 @@ a {
 .zhezhao{
 	height: 200px;
 	width: 100%;
-	position: fixed;
+	/* position: fixed; */
 	bottom: 0;
 	left: 0;
 	background: rgba(17, 17, 17,0.8);
-	z-index: 1000;
+	/* z-index: 1000; */
 	padding-top: 20px;
 }
 
@@ -885,7 +885,9 @@ a {
     -khtml-user-select:none; /*早期浏览器*/
     user-select:none;
 }
-
+.frame-two:active{
+	transform: scale(0.96);
+}
 .frame-two-box{
 	justify-content: center;
 }
@@ -1120,9 +1122,7 @@ a {
 .frame-two{
 	font-size: 16px;
 }
-.frame-two:active{
-	transform: scale(0.96);
-}
+
 ;}
 
 /* @media (max-width:767px) {
