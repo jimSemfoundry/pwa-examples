@@ -1,10 +1,10 @@
 var cacheName = 'betfrom';
 var filesToCache = [
-  '/targer/',
-  '/targer/index.html',
-  '/targer/css/style.css',
-  '/targer/js/main.js',
-  '/targer/images/image4.png',
+  '/pwa-examples/targer/',
+  '/pwa-examples/targer/index.html',
+  '/pwa-examples/targer/css/style.css',
+  '/pwa-examples/targer/js/main.js',
+  '/pwa-examples/targer/images/image4.png',
 ];
 
 /* Start the service worker and cache all of the app's content */

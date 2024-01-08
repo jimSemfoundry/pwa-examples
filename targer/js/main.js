@@ -4,7 +4,7 @@ window.onload = () => {
   let url = 'https://jim-wbpn.onrender.com/jimapi'
 
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./sw.js",{
+    navigator.serviceWorker.register("./pwa-examples/targer/sw.js",{
         scope: ".", // <--- THIS BIT IS REQUIRED
     })
     .then(async function (registration) {
