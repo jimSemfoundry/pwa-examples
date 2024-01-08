@@ -1092,14 +1092,14 @@ a {
 	height: auto;
 }
 .privacy-policy{
-	font-size: 2.125rem;
+	font-size: 1.125rem;
 }
 .legal-links{
 	font-size: 2.125rem;
 }
 .group-9,.group-a{
-	width: 5.8125rem;
-    height: 5.8125rem;
+	/* width: 5.8125rem;
+    height: 5.8125rem; */
 }
 .span-operated-by-omnispect{
 	font-size: 1rem
