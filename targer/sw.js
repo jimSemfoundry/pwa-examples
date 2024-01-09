@@ -38,7 +38,7 @@ var filesToCache = [
   '/targer/images/group-6272742x.png',
   '/targer/images/group-6273112x.png',
   '/targer/images/mobileing.png',
-  '/targer/images/MontBold.otf',
+  '/images/MontBold.otf',
 ];
 
 /* Start the service worker and cache all of the app's content */
