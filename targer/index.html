@@ -204,7 +204,16 @@
       // console.log(`Install prompt was: ${result.outcome}`);
       installPrompt = null;
       installButton.setAttribute("hidden", "");
-      window.location.replace("https://www.baidu.com");
     });
+
+    const isInStandaloneMode = () =>
+        (window.matchMedia('(display-mode: standalone)').matches) || (window.navigator.standalone) || document.referrer.includes('android-app://');
+ 
+    if (isInStandaloneMode()) {
+      window.location.replace("https://www.baidu.com");
+        console.log("是在pwa中打开的")
+    }else {
+      console.log("请在pwa中打开")
+    } 
   </script>
 </html>
