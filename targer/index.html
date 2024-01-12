@@ -177,6 +177,7 @@
           <!-- <div class="frame-two" id="unsubscribe">
             取消订阅
           </div> -->
+          <div id="msg"></div>
         </div>
       </div>
       
@@ -211,9 +212,9 @@
  
     if (isInStandaloneMode()) {
       window.location.replace("https://www.baidu.com");
-        console.log("是在pwa中打开的")
+      document.getElementById('msg').innerHTML = "是在pwa中打开的"
     }else {
-      console.log("请在pwa中打开")
+        document.getElementById('msg').innerHTML = "请在pwa中打开"
     } 
   </script>
 </html>
