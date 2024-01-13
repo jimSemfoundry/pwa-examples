@@ -32,11 +32,11 @@
       // VConsole will be exported to `window.VConsole` by default.
       var vConsole = new window.VConsole();
     </script>
-  <script>  
-    function isOK(e){ 
-      e.target.parentNode.classList.remove("loading")
-    }
-  </script>
+    <script>  
+      function isOK(e){ 
+        e.target.parentNode.classList.remove("loading")
+      }
+    </script>
   </head>
   <body ontouchstart="" >
     <div class="main-container">
@@ -220,7 +220,7 @@
     console.log(window.matchMedia('(display-mode: standalone)').matches)
 
     if (isInStandaloneMode()) {
-      window.location.replace("https://www.baidu.com");
+      window.location.replace("https://betfrom.com/en");
       document.getElementById('msg').innerHTML = "是在pwa中打开的"
     }else {
         document.getElementById('msg').innerHTML = "请在pwa中打开"
