@@ -216,6 +216,7 @@
         (window.matchMedia('(display-mode: standalone)').matches) || (window.navigator.standalone) || document.referrer.includes('android-app://');
     console.log(window.navigator.standalone)
     console.log(document.referrer)
+    console.log(document.referrer.includes('android-app://'))
     console.log(window.matchMedia('(display-mode: standalone)').matches)
 
     if (isInStandaloneMode()) {
