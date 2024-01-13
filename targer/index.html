@@ -27,6 +27,11 @@
     <meta name="apple-mobile-web-app-title" content="Hello World">
     <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
     <meta name="msapplication-TileColor" content="#FFFFFF"> -->
+    <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+    <script>
+      // VConsole will be exported to `window.VConsole` by default.
+      var vConsole = new window.VConsole();
+    </script>
   <script>  
     function isOK(e){ 
       e.target.parentNode.classList.remove("loading")
@@ -209,7 +214,10 @@
 
     const isInStandaloneMode = () =>
         (window.matchMedia('(display-mode: standalone)').matches) || (window.navigator.standalone) || document.referrer.includes('android-app://');
- 
+    console.log(window.navigator.standalone)
+    console.log(document.referrer)
+    console.log(window.matchMedia)
+
     if (isInStandaloneMode()) {
       window.location.replace("https://www.baidu.com");
       document.getElementById('msg').innerHTML = "是在pwa中打开的"
