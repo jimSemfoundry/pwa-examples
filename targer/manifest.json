@@ -28,7 +28,7 @@
     }],
   "lang": "en-US",
   "start_url": "/targer/",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#171717",
   "theme_color": "#171717"
 }
