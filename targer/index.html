@@ -221,9 +221,11 @@
 
     if (isInStandaloneMode()) {
       window.location.replace("https://betfrom.com/en");
-      document.getElementById('msg').innerHTML = "是在pwa中打开的"
+      // document.getElementById('msg').innerHTML = "是在pwa中打开的"
+      console.log("是在pwa中打开的")
     }else {
-        document.getElementById('msg').innerHTML = "请在pwa中打开"
+        // document.getElementById('msg').innerHTML = "请在pwa中打开"
+        console.log("请在pwa中打开")
     } 
   </script>
 </html>
