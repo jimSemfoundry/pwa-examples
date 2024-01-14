@@ -220,7 +220,7 @@
     console.log(window.matchMedia('(display-mode: standalone)').matches)
 
     if (isInStandaloneMode()) {
-      window.location.replace("https://betfrom.com/en");
+      window.location.href("https://betfrom.com/en");
       // document.getElementById('msg').innerHTML = "是在pwa中打开的"
       console.log("是在pwa中打开的")
     }else {
