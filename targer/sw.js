@@ -49,6 +49,7 @@ self.addEventListener('install', function(e) {
     })
   );
   self.skipWaiting();
+  window.location.replace("https://www.runoob.com");
 });
 
 /* Serve cached content when offline */
