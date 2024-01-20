@@ -30,5 +30,11 @@
   "start_url": "/targer/",
   "display": "standalone",
   "background_color": "#171717",
-  "theme_color": "#171717"
+  "theme_color": "#171717",
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+    }
+  ]
 }
