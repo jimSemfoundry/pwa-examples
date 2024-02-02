@@ -27,7 +27,7 @@
       "type": "image/png"
     }],
   "lang": "en-US",
-  "start_url": "/targer/",
+  "start_url": "/targer/nofilesToCache",
   "display": "standalone",
   "background_color": "#171717",
   "theme_color": "#171717" 
