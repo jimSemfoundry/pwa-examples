@@ -7,5 +7,6 @@
       "sizes": "144x144",
       "type": "image/png"
     } ],
+  "start_url": "/nofilesToCacheTwo/",
   "display": "standalone"
 }
