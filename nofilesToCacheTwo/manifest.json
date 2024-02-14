@@ -1,6 +1,7 @@
 {
+  "name": "betfrom Web App",
+  "short_name": "betfrom",
   "gcm_sender_id": "103953800507", 
-
   "icons": [{
     "src": "images/Favicon.png",
       "sizes": "96x96",
