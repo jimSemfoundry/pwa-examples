@@ -1,12 +1,10 @@
 {
-  "name": "betfrom Web App",
-  "short_name": "betfrom",
   "gcm_sender_id": "103953800507", 
   "icons": [ {
       "src": "images/hello-icon-144.png",
       "sizes": "144x144",
       "type": "image/png"
     } ],
-  "start_url": "/nofilesToCacheTwo/",
+  "start_url": "/",
   "display": "standalone"
 }
