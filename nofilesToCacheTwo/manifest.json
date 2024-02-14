@@ -8,5 +8,6 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ]
+  ],
+  "start_url": "/nofilesToCacheTwo/"
 }
